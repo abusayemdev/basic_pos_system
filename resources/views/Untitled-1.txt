@@ -1,0 +1,10 @@
+php artisan make:migration create_orderdetails_table
+php artisan make:controller CartController
+php artisan migrate
+@extends('dashboard')
+@section('content')
+
+@endsection
+
+php artisan make:export ProductsExport --model=Product
+php artisan make:import ProductsImport --model=Product
